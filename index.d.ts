@@ -1,4 +1,4 @@
-declare module "native-base" {
+declare module "@aaxis/native-base" {
 	import * as React from "react";
 	import * as ReactNative from "react-native";
 	import { KeyboardAwareScrollViewProps } from "@codler/react-native-keyboard-aware-scroll-view";
@@ -291,9 +291,9 @@ declare module "native-base" {
              * Array of data chunks to render iteratively.
              */
       dataArray?: Array<any>;
-      renderItem?: (	
-				item: any,	
-				index: string | number,	
+      renderItem?: (
+				item: any,
+				index: string | number,
 			) => React.ReactElement<any>;
 			renderRow?: (
 				rowData: any,
@@ -1172,10 +1172,10 @@ declare module "native-base" {
 	export class ActionSheet {
 		static show: (
 			configuration: {
-				options: string[] | Array<{ 
-					text: string, 
-					icon?: string, 
-					iconColor?: string, 
+				options: string[] | Array<{
+					text: string,
+					icon?: string,
+					iconColor?: string,
 					iconType?: "AntDesign" | "Entypo" | "EvilIcons" | "Feather" | "FontAwesome" | "FontAwesome5" | "Foundation" | "Ionicons" | "MaterialCommunityIcons" | "MaterialIcons" | "Octicons" | "SimpleLineIcons" | "Zocial",
 				}>;
 				cancelButtonIndex?: number;
